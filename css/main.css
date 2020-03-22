@@ -1,0 +1,575 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*классы для меню-бургера */
+
+body {
+    background: #E5E5E5;
+}
+
+.header-max {
+    width: 100%;
+    
+    background-color: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(7, 36, 70, 0.08);
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.header {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-logo {
+    display: flex;
+}
+
+.menu {
+    width: 80px;
+    height: 80px;
+    background-color: #F3F3F3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 30px;
+}
+
+.menu_border {
+    width: 40px;
+    height: 4px;
+    margin-bottom: 10px;
+    background-color: #013A67;
+    border-radius: 10px;
+}
+
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.logo-vibor {
+    margin-right: 4px;
+}
+
+.logo-pro-wrapper {
+    border-bottom: 4px solid #013A67;
+}
+
+.form-search {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    width: 436px;
+    height: 50px;
+    border: 1px solid #E5E5E5;
+    border-radius: 4px;
+}
+
+.search-input::placeholder {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    padding-left: 18px;
+}
+
+
+.search-btn {
+    width: 134px;
+    height: 52px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: #E1AA12;
+    border: 1px solid #E1AA12;
+    border-radius: 4px;
+    margin-left: -5px;
+}
+
+.search-btn-img {
+    position: relative;
+    right: 5px;
+    top: 3px;
+}
+
+/* это стили для смартфона */ 
+
+.search-media {
+    display: none;
+}
+
+/* это начинается основная часть */
+
+.main {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/*это навигация сверху */
+.nav {
+    margin-bottom: 27px;
+}
+
+.nav a {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    color: #013A67;
+    text-decoration: none;
+}
+/* это псевдокласс для ссылок */
+.nav_home::after,
+.nav_category::after,
+.nav_firm::after {
+    content: url("../img/nav_arrow.png");
+    margin-left: 8px;
+}
+
+.nav_model {
+    color: rgba(7, 23, 41, 0.5);
+}
+
+
+/* это блок с моделью */
+.model_name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    color: #072446;
+    text-transform: uppercase;
+
+    margin-bottom: 67px;
+    
+}
+
+
+/* это мини модели слева */
+.model_wrapper {
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: 59px;
+}
+
+.model_mini {
+    display: flex;
+    flex-direction: column;
+}
+
+.model_mini div {
+    width: 85.45px;
+    height: 85.45px;
+    background: #FFFFFF;
+    border-radius: 4px;
+
+    margin-bottom: 26.5px;
+    margin-right: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mini_foto-border {
+    border: 1px solid #013A67;
+}
+
+/* это большое фото посередине */
+
+.model_macro {
+    width: 470px;
+    height: 360px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    margin-right: 48px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+/* это стили для скрытия */
+
+.hide {
+    display: none;
+}
+
+.btn_view_left, 
+.btn_view_right {
+    border: none;
+    background-color: #FFFFFF;
+}
+
+
+/* это описание модели рядом с фото */ 
+.description_h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.model_description {
+    /*width: 355px;*/
+    margin-bottom: 30px;
+    font-family: 'Open Sans';
+    font-size: 16px;
+}
+
+.description_list li{
+    list-style-type: none;
+    margin-left: 10px;
+}
+
+.description_list li::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: #E1AA12;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    top: 13px;
+    right: 10px;
+    
+}
+
+/* это табы */
+
+.tabs__nav {
+    display: flex;
+    
+}
+
+.tabs__nav div {
+    width: 201px;
+    height: 50px;
+
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    
+
+    border: 1px solid #013A67;
+    border-radius: 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+
+
+.tab {
+    display: none;
+}
+
+.is-active { 
+    display: block; 
+}
+
+
+
+.tabs__content {
+    margin-top: 15px;
+    padding: 30px 50px 37px 30px;
+    background: #FFFFFF;
+    border-radius: 4px;
+}
+
+.tab-hover {
+    background: #E1AA12;
+    border: 0px;
+    color: #FFFFFF;
+}
+
+.tab-1_h3 {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 17px;
+}
+
+.tab-1 p {
+    margin-bottom: 25px;
+    font-family: 'Open Sans';
+    font-size: 16px;
+}
+
+
+
+.tab-1_img-text {
+    width: 487px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.6);
+
+    font-family: 'Open Sans';
+    font-size: 14px;
+
+    position: relative;
+    bottom: 50px;
+    border-radius: 0px 0px 4px 4px;
+
+    padding-left: 15px;
+
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.tab-1_avtor {
+    display: flex;
+    background: #F7F8F9;
+    border-radius: 4px;
+    padding: 30px;
+    font-family: 'Open Sans';
+    font-size: 14px;
+}
+
+.tab-1_avtor img {
+    margin-left: 30px;
+    margin-right: 25px;
+}
+
+.tab-1_avtor h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.tab-1_avtor-text {
+    padding-left: 15px;
+    border-left: 2px solid #013A67;
+}
+
+/* кнопка оставить отзыв */
+.btn_review,
+.btn_review-submit {
+    width: 200px;
+    height: 50px;
+    background: #E1AA12;
+    border: 0px;
+    border-radius: 4px;
+
+    font-family: Oswald;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+
+    margin-top: 30px;
+}
+
+.btn_review-submit {
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+/*  это всплывающее окно */
+
+.wrap-container,
+.wrap-container-submit {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(7, 36, 70, 0.63);
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    overflow: scroll;
+}
+
+
+
+
+.wrap_review {
+    width: 700px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 10px 40px rgba(7, 36, 70, 0.4);
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+
+    font-family: 'Open Sans';
+    font-size: 16px;
+}
+
+.wrap_review-name label {
+    padding-left: 30px;
+}
+
+.wrap_review-header {
+    display: flex;
+    margin: 30px;
+
+    justify-content: space-between;
+}
+
+.btn_close-rewiew,
+.btn_close-submit {
+    background-color: #FFFFFF;
+    border: 0px;
+}
+
+.wrap_review-main {
+    background: #F7F8F9;
+    border-radius: 4px;
+
+    margin: 30px;
+}
+
+.wrap_review-name-star {
+    display: flex;
+    padding-top: 30px;
+}
+
+.wrap_review-star {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrap_review-star p {
+    margin-bottom: 30px;
+}
+
+
+.wrap_review-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrap_review-main p {
+    padding-left: 30px;
+}
+
+.wrap_review input,
+.wrap_review textarea {
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    border-radius: 4px;
+}
+
+.wrap_review textarea {
+    resize: none;
+
+    width: 90%;
+    height: 110px;
+    margin: 30px;
+}
+
+.wrap_review input {
+    width: 50%;
+    height: 50px;
+    margin: 30px;
+}
+
+.wrap_review-name label,
+.wrap_review-name input {
+    display: block;
+    width: 290px;
+}
+
+.wrap_review-submit {
+    width: 700px;
+    height: 380px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 40px rgba(7, 36, 70, 0.4);
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    font-family: 'Open Sans';
+    font-size: 20px;
+
+    padding: 30px;
+}
+
+.hide-wrap {
+    display: none;
+}
+
+.btn_close-submit {
+    align-self: flex-end;
+    margin-bottom: 45px;
+}
+
+.review-submit-img-container {
+    width: 130px;
+    height: 130px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #F7F8F9;
+    border-radius: 50%;
+
+    margin-bottom: 25px;
+}
+
+.review-submit-text {
+    text-align: center;
+}
+
+/* стили для подала */
+
+.footer-max {
+    width: 100%;
+    
+    background: #072446;
+    display: flex;
+}
+
+.footer {
+    width: 100%;
+    max-width: 1170px;
+    height: 165px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: 'Open Sans';
+    font-size: 16px;
+    color: #E5E5E5;
+}
+
+.logo-footer {
+    display: flex;
+}
+
+.logo-wrapper {
+    display: flex;
+
+    margin-right: 57px;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+   
+
+    <title>Vibor.pro</title>
+
+</head>
+
+<body>
+
+    <header class="header-max">
+        <section class="header">
+            <section class="menu-logo">
+                <div class='menu'>
+                    <div class='menu_border'></div>
+
+                    <div class='menu_border'></div>
+
+                    <div class='menu_border'></div>
+                </div>
+
+                <div class='logo-wrapper'>
+                    <img src='img/logo.png' alt='Логотип' class="logo-vibor" height="32px">
+                    <div class="logo-pro-wrapper">
+                        <img src='img/logo-after.png' alt='Логотип' class="logo-pro">
+                    </div>
+                </div>
+            </section>
+        
+
+            <form action="" method="GET" class='form-search'>
+                <input type='text' class="search-input" placeholder="поиск по товарам, категориям, брендам">
+                <button class="search-btn"><img src='img/search-btn.png' alt='Иконка поиска' class="search-btn-img">Найти</button>
+            </form>
+
+            <img src="img/search-media.png" alt="Поиск" class="search-media">
+
+            </section>  
+        
+    </header>
+
+    <main class='main'>
+        <nav class='nav'>
+            <a href='#' class="nav_home">Главная</a>
+            <a href='#' class="nav_category">Наушники</a>
+            <a href='#' class="nav_firm">Sennheiser</a>
+            <a href='#' class="nav_model">Наушники Sennheiser HD 559</a>
+        </nav>
+
+        <section class="model">
+            <h2 class="model_name">Наушники Sennheiser HD 559</h2>
+
+            <div class="model_wrapper">
+
+                <div class="model_mini">
+                    <div class="minifoto_1">
+                        <img src="img/view_1.png" alt="Вид 1" class="view_1">
+                    </div>
+
+                    <div class="minifoto_2">
+                        <img src="img/view_2.png" alt="Вид 2" class="view_2">
+                    </div>
+
+                    <div class="minifoto_3">
+                        <img src="img/view_3.png" alt="Вид 3" class="view_3">
+                    </div>
+                    
+                </div>
+
+                <div class="model_macro">
+                    <button class='btn_view_left' onClick="vpered()"><img src="img/btn-arrow-left.png" alt="" class='btn_img_1'></button>
+                    <img src="img/macro_foto.png" alt="" class="view_macro" name="r">
+                    <button class='btn_view_right' onClick="vpered()"><img src="img/btn-arrow-right.png" alt="" class='btn_img_2'></button>
+                    
+                </div>
+
+                <div class="model_description">
+                    <h3 class='description_h3'>
+                        Коротко о товаре
+                    </h3>
+
+                    <ul class='description_list'>
+                        <li>полноразмерные, открытые</li>
+                        <li>чувствительность 108 дБ/В</li>
+                        <li>импеданс 50 Ом</li>
+                        <li>разъем jack 6.3 mm</li>
+                    </ul>
+
+                    <button class='btn_review description-btn' data-modal="#review">Оставить отзыв</button>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="tabs">
+            <div class="tabs__nav">
+                <div class='tabs-nav__item is-active tab-hover' data-tab-name="tab-1">Обзор</div>
+                <div class='tabs-nav__item' data-tab-name="tab-2">Отзывы</div>
+                <div class='tabs-nav__item' data-tab-name="tab-3">Характеристики</div>
+                <div class='tabs-nav__item' data-tab-name="tab-4">Инструкция</div>
+            </div>
+
+            <div class='tabs__content'>
+                <div class='tab is-active tab-1'>
+                    <h3 class='tab-1_h3'>Обзор Sennheiser HD 559</h3>
+
+                    <p class='tab-1_text-1'>Наушники Sennheiser HD 559 выполнены в формате полноразмерных наушников. Их особенность заключается в том, что они полностью охватывают ухо. Качественное звучание подчеркивается хорошей шумоизоляцией. </p>
+                    <p>Диапазон воспроизводимых частот – 14 - 26000 Гц.</p>
+                    <p>Чувствительность звука составляет 108 дБ/мВт.</p>
+
+                    <div class="tab-1_img-wrapper">
+                        <img src="img/tab1_img.png" alt="Наушники" class="tab1_img">
+                        <div class='tab-1_img-text'>Источник фото: <a href=''>vsystem.bg/en/sennheiser-hd-559-headphones</a></div>
+                    </div>
+
+                    <h3 class='tab-1_h3'>Крепление</h3>
+
+                    <p>Крепление наушников на оголовье. Это вертикальная дужка, которая соединяет две чашечки наушников. При таком способе крепления вес наушников равномерно распределяется по всей голове.</p>
+
+
+                    <h3 class='tab-1_h3'>Подключение</h3>
+
+                    <p>Разъем наушников выполнен в форме jack 6.3 mm.<br>
+                        Форма разъема наушников – прямой. Значительная его часть остается снаружи, что приводит к увеличению его габаритов.<br>
+                        Длина кабеля – 3 метра.</p>
+
+                    <h3 class='tab-1_h3'>Автор обзора</h3>
+
+                    <div class='tab-1_avtor'>
+                        <div>
+                            <img src="img/tab1_avtor.png" alt="Ирина Константинопольская">
+                        </div>
+
+                        <div>
+                            <h4>Ирина Константинопольская</h4>
+                            <p class="tab-1_avtor-text">Каждый отзыв, независимо от источника проверяется вручную человеком и автоматизированной системой. С момента запуска собрано и проверено более 200 000 отзывов на 20 000 товаров.</p>
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+                <div class='tab tab-2'>
+                    
+                    <button class='btn_review' data-modal="#review">Оставить отзыв</button>
+
+                </div>
+                <div class='tab tab-3'>
+                    <table>
+                        <tr>
+                            <td>Конструкция:</td>
+                            <td>накладные, открытые.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Тип подключения:</td>
+                            <td>проводные.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Подвод кабеля:</td>
+                            <td>Штекер 6.35 мм (Jack).</td>
+                        </tr>
+
+                        <tr>
+                            <td>Подвод кабеля:</td>
+                            <td>односторонний.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Кабель / радиус:</td>
+                            <td>3 м.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Съемный кабель</td>
+                            <td>да</td>
+                        </tr>
+
+                        <tr>
+                            <td>Тип кабеля:</td>
+                            <td>круглый.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Номинальные сопротивление:</td>
+                            <td>50 Ом.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Звук:</td>
+                            <td>да</td>
+                        </tr>
+
+                        <tr>
+                            <td>Частотный диапазон:</td>
+                            <td>14 – 26000 Гц.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Чувствительность:</td>
+                            <td>108 дБ.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Тип излучателей:</td>
+                            <td>динамические.</td>
+                        </tr>
+                    </table>
+
+                </div>
+                <div class='tab tab-4'>4 блок</div>
+
+            </div>
+
+        </section>
+
+        <div class='wrap-container hide-wrap' id='review'>
+
+            <div class='wrap_review'>
+                <div class="wrap_review-header">
+                    <h2>Оставить отзыв</h2>
+                    <button class="btn_close-rewiew"><img src="img/close_icon.png" alt="Значок закрытия"></button>
+                </div>
+
+                <div class="wrap_review-main">
+                    <div class="wrap_review-name-star">
+                        <div class="wrap_review-name">
+                            <label for='name'>Ваше имя</label>
+                            <input type="text" id='name'>
+                        </div>
+
+                        <div class='wrap_review-star'>
+                            <p>Оценка</p>
+                            <div>
+                                <img src="img/review-star-img.png" alt="Звездочка отзыва">
+                                <img src="img/review-star-img.png" alt="Звездочка отзыва">
+                                <img src="img/review-star-img.png" alt="Звездочка отзыва">
+                                <img src="img/review-star-img.png" alt="Звездочка отзыва">
+                                <img src="img/review-star-img.png" alt="Звездочка отзыва">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p>Достоинства</p>
+                        <textarea></textarea>
+                    </div>
+
+                    <div>
+                        <p>Недостатки</p>
+                        <textarea></textarea>
+                    </div>
+
+                    <div>
+                        <p>Комментарий</p>
+                        <textarea></textarea>
+                    </div>
+
+                    <button class='btn_review-submit' data-modal="#submit">отправить отзыв</button>
+    
+                </div>
+            </div>
+        </div>
+
+            <div class="wrap-container-submit hide-wrap" id='submit'> 
+
+                <div class='wrap_review-submit'>
+                    <button class="btn_close-submit"><img src="img/close_icon.png" alt="Значок закрытия"></button>
+                    
+                    <div class="review-submit-img-container">
+                        <img src="img/wrap_review-submit.png" alt="Отзыв отправлен" class="review-submit-img">
+                    </div>
+
+                    <p class="review-submit-text">
+                        Спасибо! 
+                        <br>
+                        Ваш отзыв отправлен на модерацию
+                    </p>
+                </div>
+
+            </div>
+
+    </main>
+
+    
+    <footer class="footer-max">
+        <section class="footer">
+            <section class="logo-footer">
+    
+                <div class='logo-wrapper'>
+                    <img src='img/logo.png' alt='Логотип' class="logo-vibor" height="32px">
+                    <div class="logo-pro-wrapper">
+                    <img src='img/logo-after.png' alt='Логотип' class="logo-pro">
+                    </div>
+                </div>
+
+                <div class="footer-contact">
+                    Контакты для связи по всем вопросам - 
+                        <span class='footer-email'>info@vibor.pro</span>
+                </div>
+            </section>
+            
+            <div class="footer-copy">
+                © vibor.pro - 2020
+            </div>
+                
+        </section>  
+            
+        </footer>
+    
+
+
+
+    <script src='script/script.js'></script>
+    <script src='script/tabs.js'></script>
+    <script src='script/wrap.js'></script>
+</body>
+
+</html>

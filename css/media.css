@@ -1,0 +1,342 @@
+
+
+/* Portrait tablets and small desktops */
+@media (max-width: 991px) {
+    /* это для шапки */
+    .header-max {
+        width: 100%;
+        min-width: 900px;
+    }
+
+    .header {
+        width: 900px;
+    }
+    .search-media {
+        display: block;
+    }
+
+    .form-search {
+        display: none;
+    }
+
+    /* это для основной части */
+    .main {
+        width: 900px;
+        margin: 0 20px;
+    }
+
+    .model_wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .model_mini {
+        display: none;
+    }
+
+    .model_description {
+        align-self: center;
+        margin-top: 30px;
+    }
+
+    .description-btn {
+        display: none;
+    }
+
+    /* это для подвала */
+
+    .footer-max {
+        width: 100%;
+        min-width: 900px;
+    }
+
+    .footer {
+        height: 335px;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .logo-footer {
+        flex-direction: column;
+        text-align: center;
+        
+        align-items: center;
+    }
+
+    .logo-wrapper {
+        margin-bottom: 20px;
+    }
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    /* это для шапки */
+
+    .header-max {
+        width: 100%;
+        min-width: 766px;
+    }
+
+    .header {
+        width: 760px;
+    }
+    .search-media {
+        display: block;
+    }
+
+    .form-search {
+        display: none;
+    }
+
+    /* это для основной части */
+    .main {
+        width: 760px;
+        margin: 0 20px;
+    }
+
+    .model_wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .model_mini {
+        display: none;
+    }
+
+    .model_description {
+        align-self: center;
+        margin-top: 30px;
+    }
+
+    .description-btn {
+        display: none;
+    }
+
+    /* это для фото в таб "Отзывы" */
+
+    .tab1_img {
+        max-width: 650px;
+    }
+
+    /* это для подвала */
+    .footer-max {
+        width: 100%;
+        min-width: 768px;
+    }
+    
+    .footer {
+        height: 335px;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .logo-footer {
+        flex-direction: column;
+        text-align: center;
+        
+        align-items: center;
+    }
+
+    .logo-wrapper {
+        margin-bottom: 20px;
+    }
+
+    
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+    /* это для шапки */
+
+    .header-max {
+        width: 100%;
+        min-width: 479px;
+    }
+
+    .header {
+        width: 460px;
+    }
+    .search-media {
+        display: block;
+    }
+
+    .form-search {
+        display: none;
+    }
+
+    /* это для основной части */
+    .main {
+        width: 460px;
+        margin: 0 20px;
+    }
+
+    .model_wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .model_mini {
+        display: none;
+    }
+
+    .model_macro {
+        max-width: 460px;
+    }
+
+    .model_description {
+        align-self: center;
+        margin-top: 30px;
+    }
+
+    .description-btn {
+        display: none;
+    }
+
+    /* это для фото в таб "Отзывы" */
+
+    .tab1_img {
+        max-width: 350px;
+    }
+
+    .tab-1_avtor {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tab-1_avtor h4 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .wrap_review-name-star {
+        flex-direction: column;
+    }
+
+    .wrap_review-star div {
+        padding-left: 30px;
+    }
+
+    /* это для подвала */
+
+    .footer-max {
+        width: 100%;
+        min-width: 479px;
+    }
+
+    .footer {
+        height: 335px;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .logo-footer {
+        flex-direction: column;
+        text-align: center;
+        
+        align-items: center;
+    }
+
+    .logo-wrapper {
+        margin-bottom: 20px;
+    }
+ }
+
+/* Iphone 5 */
+@media (max-width: 320px) {
+    /* это для шапки */
+
+    .header-max {
+        width: 100%;
+        min-width: 319px;
+    }
+
+    .header {
+        width: 310px;
+    }
+    .search-media {
+        display: block;
+    }
+
+    .form-search {
+        display: none;
+    }
+
+    /* это для основной части */
+    .main {
+        width: 310px;
+        margin: 0 20px;
+    }
+
+    .model_wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .model_macro {
+        max-width: 310px;
+    }
+
+    .model_mini {
+        display: none;
+    }
+
+    .model_description {
+        align-self: center;
+        margin-top: 30px;
+    }
+
+    .description-btn {
+        display: none;
+    }
+
+    /* это для фото в таб "Отзывы" */
+
+    .tab1_img {
+        width: 260px;
+    }
+
+    .wrap_review-name-star {
+        flex-direction: column;
+    }
+
+    .wrap_review-star div {
+        padding-left: 30px;
+    }
+
+    /* это для подвала */
+
+    .footer-max {
+        width: 100%;
+        min-width: 319px;
+    } 
+
+    .footer {
+        height: 335px;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .logo-footer {
+        flex-direction: column;
+        text-align: center;
+        
+        align-items: center;
+    }
+
+    .logo-wrapper {
+        margin-bottom: 20px;
+    }
+}
